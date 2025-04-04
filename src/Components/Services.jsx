@@ -9,7 +9,7 @@ export default function Services() {
       title: "UI/UX Design",
       fullDesc:
         "We create stunning, user-friendly interfaces that prioritize usability, engagement, and seamless experiences.",
-      points: ["User-Centered Design", "Wireframing & Prototyping", "UI Testing & Research"],
+      points: ["User-Centered Design", "Wire-framing & Prototyping", "UI Testing & Research"],
     },
     {
       title: "Web Design",
@@ -99,7 +99,7 @@ function ServiceCard({ service, isSelected, onSelect }) {
       {/* Buttons */}
       <div className="flex gap-4 mt-6">
         <motion.button
-          className="bg-white text-red-800 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-700 hover:text-white transition"
+          className="bg-white text-red-400 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-700 hover:text-white transition"
           whileHover={{ scale: 1.05 }}
         >
           Preview
