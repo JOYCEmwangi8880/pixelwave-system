@@ -16,7 +16,7 @@ const ProductDetail = () => {
       features: [
         'Student information management',
         'Attendance tracking',
-        'Gradebook system',
+        'Grade-book system',
         'Timetable scheduling',
         'Fee collection system',
         'Parent and teacher portals'
@@ -78,7 +78,7 @@ const ProductDetail = () => {
                 rel="noopener noreferrer"
                 className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full text-lg font-medium transition"
               >
-                Purchase on AsiliHub
+                Purchase on AsiliHub.net
               </a>
               <Link
                 to="/pricing"
