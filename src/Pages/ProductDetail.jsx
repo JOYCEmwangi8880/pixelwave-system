@@ -109,7 +109,7 @@ const ProductDetail = () => {
             to="/products"
             className="inline-block border border-white text-white hover:bg-white/10 px-6 py-2 rounded-full transition"
           >
-            ← Back to All Products
+            ← Back to All products
           </Link>
         </div>
       </div>
