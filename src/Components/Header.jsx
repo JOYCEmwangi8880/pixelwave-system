@@ -103,7 +103,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header className={`fixed z-999 top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? "bg-gray-900/90 backdrop-blur-md shadow-md" : "bg-gray-900"
     }`}>
       <div className="w-11/12 mx-auto py-2">
