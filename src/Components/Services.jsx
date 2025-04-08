@@ -97,7 +97,7 @@ function ServiceCard({ service, isSelected, onSelect }) {
       </ul>
 
       {/* Buttons */}
-      <div className="flex gap-4 mt-6">
+      {/* <div className="flex gap-4 mt-6">
         <motion.button
           className="bg-white text-red-400 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-700 hover:text-white transition"
           whileHover={{ scale: 1.05 }}
@@ -110,7 +110,7 @@ function ServiceCard({ service, isSelected, onSelect }) {
         >
           Demo
         </motion.button>
-      </div>
+      </div> */}
 
       {/* Blur Effect on Other Cards */}
       {!isSelected && (
