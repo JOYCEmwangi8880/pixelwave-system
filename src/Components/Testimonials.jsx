@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import { AiFillStar } from "react-icons/ai";
+import { FaThumbsUp, FaAward, FaMedal, FaHeart, FaRegStar, FaStar } from "react-icons/fa";
+import { SiTrustpilot } from "react-icons/si";
+import { IoMdRibbon } from "react-icons/io";
 
 export default function Testimonials() {
   const testimonials = [
@@ -40,18 +44,35 @@ export default function Testimonials() {
         Customer Love 💖
       </motion.h2>
 
-      {/* Review badges */}
+      {/* Review badges using React Icons */}
       <motion.div 
         className="flex justify-center gap-4 mb-8"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        <img src="/capterra.svg" alt="Capterra Rating" className="h-8" />
-        <img src="/g2-users-love.svg" alt="Users Love Us" className="h-8" />
-        <img src="/g2-high-performer.svg" alt="High Performer" className="h-8" />
-        <img src="/getapp.svg" alt="GetApp Reviews" className="h-8" />
-        <img src="/trustpilot.svg" alt="TrustPilot Rating" className="h-8" />
+        <div className="flex flex-wrap items-center justify-center gap-6 my-8">
+          <div className="flex flex-col items-center">
+            <IoMdRibbon size={32} className="text-blue-400" />
+            <span className="text-xs mt-1">Top Rated</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaHeart size={32} className="text-red-400" />
+            <span className="text-xs mt-1">Users Love Us</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaAward size={32} className="text-yellow-400" />
+            <span className="text-xs mt-1">High Performer</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaStar size={32} className="text-blue-400" />
+            <span className="text-xs mt-1">GetApp Reviews</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiTrustpilot size={32} className="text-green-500" />
+            <span className="text-xs mt-1">Excellent</span>
+          </div>
+        </div>
       </motion.div>
 
       {/* Testimonials */}
