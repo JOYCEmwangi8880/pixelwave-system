@@ -37,7 +37,7 @@ export default function StandOutDesigns() {
               <FiGlobe className="inline" /> Websites
             </h3>
             <p className="text-gray-300 mt-2">
-              Websites, landing pages, link-in-bio, we have it all. All templates are fully customizable and can be quickly expanded with pre-built sections.
+              Websites, landing pages, link-in-bio, we have it all!. All templates are fully customizable and can be quickly expanded with pre-built sections.
             </p>
             <div className="mt-4 flex items-center">
               <a href="#" className="text-blue-400 hover:underline flex items-center">
