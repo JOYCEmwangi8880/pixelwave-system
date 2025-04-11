@@ -37,7 +37,7 @@ const CaseStudies = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-white">Case Studies</h1>
           <p className="mt-4 text-xl text-gray-300">
-            Explore how PixelWave Systems is transforming education across Africa
+            Explore how PixelWave Systems is transforming education across Africa.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const CaseStudies = () => {
         <div className="mt-20 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to transform your institution?</h2>
           <p className="text-xl text-gray-300 mb-8">
-            Contact us to discuss how PixelWave Systems can meet your specific needs
+            Contact us to discuss how PixelWave Systems can meet your specific needs.
           </p>
           <button className="bg-indigo-600 text-white px-8 py-3 rounded-md hover:bg-indigo-700 transition-all duration-300">
             Get in Touch

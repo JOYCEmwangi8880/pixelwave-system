@@ -32,7 +32,7 @@ export default function Services() {
     {
       title: "Digital Marketing",
       fullDesc:
-        "Our expert strategies in SEO, PPC, and content marketing help you grow and sustain a strong online presence.",
+        "Our expert strategies in SEO, PPC, and content marketing  help you grow and sustain a strong online presence.",
       points: ["SEO & SEM Optimization", "Social Media Marketing", "Content Strategy"],
     },
     {

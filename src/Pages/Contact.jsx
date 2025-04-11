@@ -97,7 +97,7 @@ const Contact = () => {
       <div className="w-5/6 mx-auto py-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-white">Contact PixelWave Systems</h1>
-          <p className="mt-4 text-xl text-gray-300">We're here to help with any questions about our products</p>
+          <p className="mt-4 text-xl text-gray-300">We're here to help with any questions about our products!</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -163,7 +163,7 @@ const Contact = () => {
                   <option value="">Select a subject</option>
                   <option value="Sales Inquiry">Sales Inquiry</option>
                   <option value="Technical Support">Technical Support</option>
-                  <option value="Partnership Opportunity">Partnership Opportunity</option>
+                  <option value="Partnership Opportunity">Partnership Opportunities</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
