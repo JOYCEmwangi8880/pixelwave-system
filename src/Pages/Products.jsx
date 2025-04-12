@@ -13,7 +13,7 @@ const Products = () => {
       features: [
         'Student information management',
         'Attendance tracking',
-        'Gradebook system',
+        'Grade-book system',
         'Timetable scheduling',
         'Fee collection',
         'Parent portal'
@@ -65,7 +65,7 @@ const Products = () => {
               
               <Link
                 to={`/product-detail`}
-                state={{ product }} // Pass the entire product object
+                state={{ product }} 
                 className="inline-block bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full transition"
               >
                 Learn More
