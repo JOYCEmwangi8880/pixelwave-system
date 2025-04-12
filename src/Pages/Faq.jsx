@@ -11,7 +11,7 @@ const Faq = () => {
 
   const faqs = [
     {
-      question: "How do I get started with Pixelwave products?",
+      question: "How do I get started with Pixel-wave products?",
       answer: "You can start by visiting our Products page to explore our offerings, then contact our sales team for a demo or consultation. We'll guide you through the onboarding process based on your specific needs."
     },
     {
@@ -19,7 +19,7 @@ const Faq = () => {
       answer: "All subscriptions include basic email support during business hours. Higher tiers include priority phone support, dedicated account management, and 24/7 emergency support for critical issues."
     },
     {
-      question: "Can I integrate Pixelwave products with my existing systems?",
+      question: "Can I integrate Pixel-wave products with my existing systems?",
       answer: "Yes, all our products are designed with API-first architectures. We provide comprehensive documentation and SDKs for popular platforms to facilitate integration with your existing tech stack."
     },
     {
@@ -48,7 +48,7 @@ const Faq = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h1>
-          <p className="text-xl text-gray-300">Find answers to common questions about Pixelwave Systems products</p>
+          <p className="text-xl text-gray-300">Find answers to common questions about Pixel-wave Systems products</p>
         </div>
 
         <div className="space-y-6 mb-20">
