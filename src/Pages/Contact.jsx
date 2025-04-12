@@ -35,7 +35,7 @@ const Contact = () => {
       [id]: value
     }));
     
-    // Clear error when user starts typing
+    
     if (errors[id]) {
       setErrors(prev => ({ ...prev, [id]: '' }));
     }
