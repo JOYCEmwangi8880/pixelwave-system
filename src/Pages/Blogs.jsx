@@ -38,7 +38,7 @@ const Blogs = () => {
     <div className="bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900">Pixelwave Insights</h1>
+          <h1 className="text-4xl font-bold text-gray-900">Pixel-wave Insights</h1>
           <p className="mt-4 text-xl text-gray-600">Thought leadership on software design, development and innovation</p>
         </div>
 
