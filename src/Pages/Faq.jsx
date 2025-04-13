@@ -79,7 +79,7 @@ const Faq = () => {
           <div className="text-center">
             <Mail className="h-10 w-10 text-indigo-400 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-2">Still have questions?</h2>
-            <p className="text-gray-300 mb-6">Can't find what you're looking for? Ask our team directly.</p>
+            <p className="text-gray-300 mb-6">Can't find what you're looking for? Ask our team directly!.</p>
             
             <form onSubmit={handleSubmitQuestion} className="max-w-md mx-auto">
               <div className="flex">
