@@ -6,7 +6,7 @@ const ProductDetail = () => {
   const { state } = useLocation();
   const product = state?.product;
 
-  // Sample product data structure
+ 
   const defaultProducts = {
     school: {
       id: 'school',
