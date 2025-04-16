@@ -42,7 +42,7 @@ const Updates = () => {
             </div>
             <h2 className="mt-4 text-2xl font-bold text-white">Unified Platform Dashboard</h2>
             <p className="mt-4 text-gray-300">
-              We're excited to announce our new unified dashboard that provides a single pane of glass for managing all Pixel-wave products. 
+              We are excited to announce our new unified dashboard that provides a single pane of glass for managing all Pixel-wave products. 
               Monitor usage, performance, and integrations across your entire software stack.
             </p>
             <div className="mt-6 flex items-center">
