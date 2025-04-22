@@ -55,7 +55,7 @@ const ProductDetail = () => {
     }
   };
 
-  // Get product data either from state or default products
+  
   const currentProduct = product || defaultProducts[state?.productId] || defaultProducts.school;
 
   return (
