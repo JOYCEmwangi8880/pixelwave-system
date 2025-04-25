@@ -251,7 +251,7 @@ const Contact = () => {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium text-white">Nairobi Office</h3>
-                    <p className="text-gray-300 mt-1">Spur Mall, Second Floor</p>
+                    <p className="text-gray-300 mt-1">Spur Mall Ruiru, Second Floor</p>
                     <p className="text-gray-300">Along Thika Road</p>
                     <p className="text-gray-300">Nairobi, Kenya</p>
                     <a href="#" className="text-indigo-300 hover:text-indigo-100 inline-block mt-2">View on Map →</a>
