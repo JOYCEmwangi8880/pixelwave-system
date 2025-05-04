@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-11/12 mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">PixelWave</h3>
+            <h3 className="text-xl font-bold mb-4">PixelWave systems</h3>
             <p className="text-gray-400">Transforming education through innovative digital solutions.</p>
           </div>
           <div>
