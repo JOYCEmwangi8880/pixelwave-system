@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -85,8 +84,9 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div>
-        <img src="/images/Removal-783.png" alt=""  className="w-3/4 h-[80vh]"/>
+      {/* Team Image at the bottom */}
+      <div className="flex justify-center">
+        <img src="/assets/team.png" alt="Our Team" className="w-3/4 h-auto max-h-[80vh] object-contain"/>
       </div>
     </div>
   );
