@@ -5,7 +5,7 @@ const ProductDetail = () => {
   const { state } = useLocation();
   const product = state?.product;
 
-  // Default product data
+ 
   const defaultProducts = {
     school: {
       id: 'school',
@@ -19,8 +19,7 @@ const ProductDetail = () => {
         'Timetable scheduling',
         'Fee collection',
         'Parent portal'
-      ],
-      asilihubLink: 'https://www.asilihub.net/school-system'
+      ]
     },
     'ml-models': {
       id: 'ml-models',
@@ -34,8 +33,7 @@ const ProductDetail = () => {
         'Natural language processing',
         'Real-time data processing',
         'API integration'
-      ],
-      asilihubLink: 'https://www.asilihub.net/ml-models'
+      ]
     },
     'logo-design': {
       id: 'logo-design',
@@ -49,12 +47,11 @@ const ProductDetail = () => {
         'Typography tools',
         'Export in multiple formats',
         'Brand style guides'
-      ],
-      asilihubLink: 'https://www.asilihub.net/logo-design'
+      ]
     }
   };
 
-  // Product image mapping
+  
   const productImages = {
     school: '/assets/students.jpg',
     'ml-models': '/assets/PERSON ON PHONE .png',
@@ -85,7 +82,7 @@ const ProductDetail = () => {
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
-                href={currentProduct.asilihubLink}
+                href="https://www.asilihub.net/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full text-lg font-medium transition"
