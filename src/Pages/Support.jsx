@@ -47,7 +47,7 @@ const Support = () => {
             {
               icon: <Phone className="h-8 w-8" />,
               title: "Phone Support",
-              contact: "+1 (800) 555-TECH",
+              contact: "+254 726 257338",
               action: "Call Now"
             },
             {
