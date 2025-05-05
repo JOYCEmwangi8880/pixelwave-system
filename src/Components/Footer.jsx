@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { FaGithub, FaWhatsapp, FaXTwitter } from 'react-icons/fa6'; // From react-icons
 
 const Footer = () => {
   return (
@@ -30,10 +31,18 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white"><Facebook size={24} /></a>
-              <a href="#" className="text-gray-400 hover:text-white"><Twitter size={24} /></a>
-              <a href="#" className="text-gray-400 hover:text-white"><Linkedin size={24} /></a>
-              <a href="#" className="text-gray-400 hover:text-white"><Instagram size={24} /></a>
+              <a href="https://www.linkedin.com/company/asilihub-limited/" target="_blank" rel="noopener noreferrer" className="text-[#0077b5] hover:text-white">
+                <Linkedin size={24} />
+              </a>
+              <a href="https://x.com/asilihub" target="_blank" rel="noopener noreferrer" className="text-black hover:text-white">
+                <FaXTwitter size={24} />
+              </a>
+              <a href="https://github.com/asilihub/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400">
+                <FaGithub size={24} />
+              </a>
+              <a href="https://wa.me/254726257338" target="_blank" rel="noopener noreferrer" className="text-[#25D366] hover:text-white">
+                <FaWhatsapp size={24} />
+              </a>
             </div>
           </div>
         </div>
