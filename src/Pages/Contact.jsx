@@ -35,7 +35,6 @@ const Contact = () => {
       [id]: value
     }));
     
-    
     if (errors[id]) {
       setErrors(prev => ({ ...prev, [id]: '' }));
     }
@@ -73,7 +72,6 @@ const Contact = () => {
         message: 'Message sent successfully! We will get back to you soon.' 
       });
       
-      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -209,53 +207,66 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white/5 rounded-lg border border-gray-400 p-8 backdrop-blur-sm hover:border-white transition-all duration-300">
-              <h2 className="text-2xl font-bold text-white mb-6">Contact Information</h2>
-              
-              <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
-                    <Mail className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-white">Email</h3>
-                    <p className="text-gray-300 mt-1">info@asilihub.net</p>
-                    <p className="text-gray-300">info@asilihub.net</p>
+              <div className="flex flex-col md:flex-row gap-8">
+                <div className="md:w-1/2">
+                  <h2 className="text-2xl font-bold text-white mb-6">Contact Information</h2>
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-start">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
+                        <Mail className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="text-lg font-medium text-white">Email</h3>
+                        <p className="text-gray-300 mt-1">info@asilihub.net</p>
+                        <p className="text-gray-300">info@asilihub.net</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
+                        <Phone className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="text-lg font-medium text-white">Phone</h3>
+                        <p className="text-gray-300 mt-1">+254 726 257 338</p>
+                        <p className="text-gray-300">+254 726 257 338</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
+                        <MessageSquare className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="text-lg font-medium text-white">Live Chat</h3>
+                        <p className="text-gray-300 mt-1">Available 24/7 in your dashboard</p>
+                        <a href="#" className="text-indigo-300 hover:text-indigo-100 inline-block mt-2">Start Chat →</a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
+                        <MapPin className="h-6 w-6 text-white" />
+                      </div>
+                      <div className="ml-4">
+                        <h3 className="text-lg font-medium text-white">Nairobi Office</h3>
+                        <p className="text-gray-300 mt-1">Spur Mall , Second Floor</p>
+                        <p className="text-gray-300">Along Thika Road , Ruiru</p>
+                        <p className="text-gray-300">Nairobi, Kenya</p>
+                        <a href="#" className="text-indigo-300 hover:text-indigo-100 inline-block mt-2">View on Map →</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
-                    <Phone className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-white">Phone</h3>
-                    <p className="text-gray-300 mt-1">+254 726 257 338</p>
-                    <p className="text-gray-300">+254 726 257 338</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
-                    <MessageSquare className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-white">Live Chat</h3>
-                    <p className="text-gray-300 mt-1">Available 24/7 in your dashboard</p>
-                    <a href="#" className="text-indigo-300 hover:text-indigo-100 inline-block mt-2">Start Chat →</a>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-white/10">
-                    <MapPin className="h-6 w-6 text-white" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium text-white">Nairobi Office</h3>
-                    <p className="text-gray-300 mt-1">Spur Mall , Second Floor</p>
-                    <p className="text-gray-300">Along Thika Road , Ruiru</p>
-                    <p className="text-gray-300">Nairobi, Kenya</p>
-                    <a href="#" className="text-indigo-300 hover:text-indigo-100 inline-block mt-2">View on Map →</a>
-                  </div>
+                {/* Added Image on the right side */}
+                <div className="md:w-1/2 flex items-center justify-center">
+                  <img 
+                    src="/assets/PERSON ON PHONE .png" 
+                    alt="Our Team" 
+                    className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+                  />
                 </div>
               </div>
             </div>
