@@ -14,7 +14,7 @@ const Hero = () => {
         {/* Hero Section */}
         <div className="flex-grow flex flex-col items-center justify-center text-center text-white px-4">
           
-          {/* Heading with Typing Effect */}
+          
           <motion.h1
             className="text-5xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             initial={{ opacity: 0, y: -50 }}
@@ -84,7 +84,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Team Image at the bottom */}
+     
       <div className="flex justify-center">
         <img src="/assets/team.png" alt="Our Team" className="w-3/4 h-auto max-h-[80vh] object-contain"/>
       </div>
