@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 
@@ -6,7 +5,7 @@ const ProductDetail = () => {
   const { state } = useLocation();
   const product = state?.product;
 
- 
+  // Default product data
   const defaultProducts = {
     school: {
       id: 'school',
@@ -18,8 +17,8 @@ const ProductDetail = () => {
         'Attendance tracking',
         'Grade-book system',
         'Timetable scheduling',
-        'Fee collection system',
-        'Parent and teacher portals'
+        'Fee collection',
+        'Parent portal'
       ],
       asilihubLink: 'https://www.asilihub.net/school-system'
     },
@@ -55,7 +54,13 @@ const ProductDetail = () => {
     }
   };
 
-  
+  // Product image mapping
+  const productImages = {
+    school: '/assets/students.jpg',
+    'ml-models': '/assets/PERSON ON PHONE .png',
+    'logo-design': '/assets/lady on laptop.png'
+  };
+
   const currentProduct = product || defaultProducts[state?.productId] || defaultProducts.school;
 
   return (
@@ -63,13 +68,20 @@ const ProductDetail = () => {
       <div className="max-w-6xl mx-auto">
         {/* Product Header */}
         <div className="flex flex-col lg:flex-row gap-12 mb-16">
-          <div className="lg:w-1/2">
-            <div className="text-9xl mb-8">{currentProduct.id === 'school' ? '🏫' : currentProduct.id === 'ml-models' ? '🤖' : '🎨'}</div>
+          {/* Image Section */}
+          <div className="lg:w-1/2 flex justify-center items-center">
+            <img
+              src={productImages[currentProduct.id]}
+              alt={currentProduct.name}
+              className="w-80 h-80 object-cover rounded-2xl shadow-lg"
+            />
           </div>
+
+          {/* Text Section */}
           <div className="lg:w-1/2">
             <h1 className="text-4xl font-bold text-white mb-4">{currentProduct.name}</h1>
             <p className="text-xl text-gray-300 mb-8">{currentProduct.fullDescription}</p>
-            
+
             {/* Action Buttons */}
             <div className="flex flex-wrap gap-4">
               <a
