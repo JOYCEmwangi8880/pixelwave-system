@@ -8,7 +8,7 @@ const Blogs = () => {
       author: "Dr. Emily Zhang",
       date: "April 5, 2024",
       readTime: "6 min read",
-      image: "https://images.unsplash.com/photo-1677442135136-760c813cd6d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+      image: "/assets/PERSON ON PHONE .png", // Updated image path
       category: "Artificial Intelligence",
       icon: <Cpu className="h-5 w-5" />
     },
@@ -18,7 +18,7 @@ const Blogs = () => {
       author: "Marcus Johnson",
       date: "April 2, 2024",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+      image: "/assets/lady on laptop.png", // Updated image path
       category: "Design",
       icon: <Paintbrush className="h-5 w-5" />
     },
@@ -28,7 +28,7 @@ const Blogs = () => {
       author: "Sarah Chen",
       date: "March 28, 2024",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+      image: "/assets/students.jpg", // Updated image path
       category: "Development",
       icon: <Code className="h-5 w-5" />
     }
@@ -48,7 +48,7 @@ const Blogs = () => {
             <div className="md:flex-shrink-0 md:w-1/2">
               <img
                 className="h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+                src="/assets/study-group.jpg" // Updated featured image
                 alt="Featured post"
               />
             </div>
