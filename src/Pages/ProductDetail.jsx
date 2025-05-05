@@ -70,7 +70,7 @@ const ProductDetail = () => {
             <img
               src={productImages[currentProduct.id]}
               alt={currentProduct.name}
-              className="w-80 h-80 object-cover rounded-2xl shadow-lg"
+              className="w-100 h-90 object-cover rounded-2xl shadow-lg"
             />
           </div>
 
