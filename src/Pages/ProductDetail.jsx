@@ -53,9 +53,9 @@ const ProductDetail = () => {
 
   
   const productImages = {
-    school: '/assets/students.jpg',
-    'ml-models': '/assets/PERSON ON PHONE .png',
-    'logo-design': '/assets/lady on laptop.png'
+    school: '/assets/students2.jpg',
+    'ml-models': '/assets/machinel.jpg',
+    'logo-design': '/assets/logod.jpg'
   };
 
   const currentProduct = product || defaultProducts[state?.productId] || defaultProducts.school;
