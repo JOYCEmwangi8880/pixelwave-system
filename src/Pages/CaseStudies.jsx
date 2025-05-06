@@ -99,7 +99,7 @@ const CaseStudies = () => {
             Contact us to discuss how PixelWave Systems can meet your specific needs.
           </p>
           <button className="bg-indigo-600 text-white px-8 py-3 rounded-md hover:bg-indigo-700 transition-all duration-300">
-            Get in Touch
+            Get in Touch →
           </button>
         </div>
       </div>
