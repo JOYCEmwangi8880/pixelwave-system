@@ -44,7 +44,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 1 }}
           >
-            Comprehensive digital solutions that transform businesses through innovative technology and design.
+            Comprehensive digital solutions that transforms businesses through innovative technology and design.
           </motion.p>
 
           {/* Buttons */}
