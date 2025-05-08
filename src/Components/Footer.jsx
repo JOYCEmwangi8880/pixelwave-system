@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-import { FaGithub, FaWhatsapp, FaXTwitter } from 'react-icons/fa6'; // From react-icons
+import { FaGithub, FaWhatsapp, FaXTwitter } from 'react-icons/fa6'; 
 
 const Footer = () => {
   return (
