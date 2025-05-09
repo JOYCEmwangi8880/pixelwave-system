@@ -14,7 +14,7 @@ export default function Testimonials() {
     {
       name: "Sophia L.",
       role: "Startup Founder",
-      text: "I had no prior coding experience, yet my first PixelWave-powered application turned out amazing!",
+      text: "I had no prior coding experience, yet my first PixelWave-powered application turned out to be so amazing!",
     },
     {
       name: "David R.",
