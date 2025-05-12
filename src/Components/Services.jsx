@@ -7,39 +7,39 @@ export default function Services() {
   const services = [
     {
       title: "UI/UX Design",
-      fullDesc:
-        "We create stunning, user-friendly interfaces that prioritize usability, engagement, and seamless experiences.",
+      fullDesc: "We create stunning, user-friendly interfaces that prioritize usability, engagement, and seamless experiences.",
       points: ["User-Centered Design", "Wire-framing & Prototyping", "UI Testing & Research"],
+      bgImage: "/assets/logod.jpg"
     },
     {
       title: "Web Design",
-      fullDesc:
-        "We craft visually appealing and highly responsive websites optimized for performance and engagement.",
+      fullDesc: "We craft visually appealing and highly responsive websites optimized for performance and engagement.",
       points: ["Responsive & Adaptive Design", "SEO-Optimized Layouts", "CMS Integration"],
+      bgImage: "/assets/study-group.jpg"
     },
     {
       title: "Mobile App Development",
-      fullDesc:
-        "We develop robust and feature-rich mobile applications tailored to user needs and business objectives.",
+      fullDesc: "We develop robust and feature-rich mobile applications tailored to user needs and business objectives.",
       points: ["iOS & Android Apps", "Cross-Platform Development", "App UI/UX Optimization"],
+      bgImage: "/assets/machinel.jpg"
     },
     {
       title: "Branding & Creative Services",
-      fullDesc:
-        "We create strong brand identities with stunning visuals, logos, and marketing materials that stand out.",
+      fullDesc: "We create strong brand identities with stunning visuals, logos, and marketing materials that stand out.",
       points: ["Logo & Identity Design", "Brand Strategy & Messaging", "Marketing Collateral"],
+      bgImage: "/assets/team.png"
     },
     {
       title: "Digital Marketing",
-      fullDesc:
-        "Our expert strategies in SEO, PPC, and content marketing  help you grow and sustain a strong online presence.",
+      fullDesc: "Our expert strategies in SEO, PPC, and content marketing help you grow and sustain a strong online presence.",
       points: ["SEO & SEM Optimization", "Social Media Marketing", "Content Strategy"],
+      bgImage: "/assets/seo.jpg"
     },
     {
       title: "Cloud & IT Infrastructure",
-      fullDesc:
-        "We provide scalable cloud solutions and IT infrastructure services for smooth, secure business operations.",
+      fullDesc: "We provide scalable cloud solutions and IT infrastructure services for smooth, secure business operations.",
       points: ["Cloud Computing Solutions", "Server Management", "Cybersecurity Services"],
+      bgImage: "/assets/IT.jpg"
     },
   ];
 
@@ -77,45 +77,44 @@ export default function Services() {
 function ServiceCard({ service, isSelected, onSelect }) {
   return (
     <motion.div
-      className={`relative bg-sky-900 h-[50vh] rounded-xl shadow-lg p-6 overflow-hidden cursor-pointer transition-all ${
-        isSelected ? "absolute top-0 left-0 w-full h-full z-50 bg-red-800 text-white" : ""
-      } ${isSelected ? "" : "hover:bg-red-800 hover:text-white"}`}
+      className={`relative h-[50vh] rounded-xl shadow-lg p-6 overflow-hidden cursor-pointer transition-all ${
+        isSelected ? "absolute top-0 left-0 w-full h-full z-50" : ""
+      }`}
       onClick={onSelect}
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <h3 className="text-3xl font-semibold">{service.title}</h3>
-      <p className="text-gray-100 mt-2 text-base">{service.fullDesc}</p>
+      {/* Background Image with gradient overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{
+          backgroundImage: `url(${service.bgImage})`,
+          backgroundColor: "#000"
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10 h-full flex flex-col justify-between">
+        <div>
+          <h3 className="text-3xl font-semibold">{service.title}</h3>
+          <p className="text-gray-100 mt-2 text-base">{service.fullDesc}</p>
+        </div>
 
-      <ul className="mt-4 text-gray-300 text-sm space-y-1">
-        {service.points.map((point, index) => (
-          <li key={index} className="flex items-center">
-            ✅ {point}
-          </li>
-        ))}
-      </ul>
+        <ul className="mt-4 text-gray-300 text-sm space-y-1">
+          {service.points.map((point, index) => (
+            <li key={index} className="flex items-center">
+              ✅ {point}
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      {/* Buttons */}
-      {/* <div className="flex gap-4 mt-6">
-        <motion.button
-          className="bg-white text-red-400 px-4 py-2 rounded-full font-semibold text-sm hover:bg-red-700 hover:text-white transition"
-          whileHover={{ scale: 1.05 }}
-        >
-          Preview
-        </motion.button>
-        <motion.button
-          className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold text-sm hover:bg-blue-800 transition"
-          whileHover={{ scale: 1.05 }}
-        >
-          Demo
-        </motion.button>
-      </div> */}
-
-      {/* Blur Effect on Other Cards */}
-      {!isSelected && (
+      {isSelected && (
         <motion.div
-          className="absolute inset-0 bg-black bg-opacity-50 transition-opacity"
+          className="absolute inset-0 bg-black bg-opacity-70 transition-opacity"
           initial={{ opacity: 0 }}
           animate={{ opacity: isSelected ? 0.7 : 0 }}
         ></motion.div>
