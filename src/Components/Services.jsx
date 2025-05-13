@@ -15,7 +15,7 @@ export default function Services() {
       title: "Web Design",
       fullDesc: "We craft visually appealing and highly responsive websites optimized for performance and engagement.",
       points: ["Responsive & Adaptive Design", "SEO-Optimized Layouts", "CMS Integration"],
-      bgImage: "/assets/study-group.jpg"
+      bgImage: "/assets/design.jpg"
     },
     {
       title: "Mobile App Development",
