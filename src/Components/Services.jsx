@@ -27,7 +27,7 @@ export default function Services() {
       title: "Branding & Creative Services",
       fullDesc: "We create strong brand identities with stunning visuals, logos, and marketing materials that stand out.",
       points: ["Logo & Identity Design", "Brand Strategy & Messaging", "Marketing Collateral"],
-      bgImage: "/assets/study-group.jpg"
+      bgImage: "/assets/br.jpg"
     },
     {
       title: "Digital Marketing",
