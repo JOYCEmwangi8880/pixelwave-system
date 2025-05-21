@@ -285,7 +285,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-300">Sunday</span>
-                  <span className="text-white">Emergency Support Only 10:00 AM - 2:00 PM</span>
+                  <span className="text-white">Emergency Support Only </span>
                 </div>
               </div>
             </div>
