@@ -8,7 +8,7 @@ const CaseStudies = () => {
       description: "How PixelWave Systems helped streamline operations and improve learning outcomes",
       image: "/assets/study-group.jpg",
       stats: "75% increase in administrative efficiency",
-      duration: "6 month implementation",
+      duration: "8 month implementation",
       category: "Education"
     },
     {
@@ -26,7 +26,7 @@ const CaseStudies = () => {
       description: "Modernizing legacy systems at Kenya's largest university",
       image: "/assets/students.jpg",
       stats: "60% reduction in manual processes",
-      duration: "8 month engagement",
+      duration: "6 month engagement",
       category: "Higher Education"
     }
   ];
