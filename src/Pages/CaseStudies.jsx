@@ -26,7 +26,7 @@ const CaseStudies = () => {
       description: "Modernizing legacy systems at Kenya's largest university",
       image: "/assets/students.jpg",
       stats: "60% reduction in manual processes",
-      duration: "6 month engagement",
+      duration: "8 month engagement",
       category: "Higher Education"
     }
   ];
