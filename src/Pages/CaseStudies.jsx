@@ -37,7 +37,7 @@ const CaseStudies = () => {
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-white">Case Studies</h1>
           <p className="mt-4 text-xl text-gray-300">
-            Explore how PixelWave Systems is transforming education across Africa.
+            Explore how PixelWave Systems is transforming education across all over Africa.
           </p>
         </div>
 
