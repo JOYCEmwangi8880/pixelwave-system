@@ -39,7 +39,7 @@ const ProductDetail = () => {
       id: 'logo-design',
       name: 'Logo Design System',
       description: 'Professional branding tools.',
-      fullDescription: 'Create stunning logos and brand identities with our professional design tools, templates, and brand management system.',
+      fullDescription: 'Create stunning logos and brands identities with our professional design tools, templates, and brand management system.',
       features: [
         'Vector-based design tools',
         'Template library',
